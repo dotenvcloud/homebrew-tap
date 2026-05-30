@@ -5,7 +5,7 @@ Homebrew formulas for DotEnv CLI.
 ## Installation
 
 ```bash
-brew tap lostlink/dotenv
+brew tap dotenvcloud/dotenv
 brew install dotenv-cli
 ```
 
