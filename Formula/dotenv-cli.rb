@@ -5,15 +5,15 @@
 class DotenvCli < Formula
   desc "Secure environment variable management CLI"
   homepage "https://dotenv.cloud"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   depends_on "ca-certificates" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dotenvcloud/cli/releases/download/v1.3.0/dotenv-cli_1.3.0_darwin_amd64.tar.gz"
-      sha256 "9bd48ec33534b87e7f687dc6dc7310a94d648a2d3fb75df3350ccab85677f5cc"
+      url "https://github.com/dotenvcloud/cli/releases/download/v1.4.0/dotenv-cli_1.4.0_darwin_amd64.tar.gz"
+      sha256 "26f5a0531e0c8547dc0a496a9e90dae2156c3dc313830da081c8b1155e08183b"
 
       define_method(:install) do
         bin.install "dotenv"
@@ -24,8 +24,8 @@ class DotenvCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dotenvcloud/cli/releases/download/v1.3.0/dotenv-cli_1.3.0_darwin_arm64.tar.gz"
-      sha256 "fb2130bd7dbfdce8b1f1209247545dea49fe8bb2bd260a34c0e109a7bba59d19"
+      url "https://github.com/dotenvcloud/cli/releases/download/v1.4.0/dotenv-cli_1.4.0_darwin_arm64.tar.gz"
+      sha256 "3ec804c75a9f1c3aa19ba534d9d60314ec72dd917933715494e8a6937df900e9"
 
       define_method(:install) do
         bin.install "dotenv"
@@ -39,8 +39,8 @@ class DotenvCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dotenvcloud/cli/releases/download/v1.3.0/dotenv-cli_1.3.0_linux_amd64.tar.gz"
-      sha256 "04bd1a76451359e2f68ec2804620f3f8dfc911046e9208ac51fe359278022761"
+      url "https://github.com/dotenvcloud/cli/releases/download/v1.4.0/dotenv-cli_1.4.0_linux_amd64.tar.gz"
+      sha256 "788e1b0db117d5b8567b2f99b9d2ebc57162d893ad699cc86fa1865e94819272"
       define_method(:install) do
         bin.install "dotenv"
 
@@ -50,8 +50,8 @@ class DotenvCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dotenvcloud/cli/releases/download/v1.3.0/dotenv-cli_1.3.0_linux_arm64.tar.gz"
-      sha256 "c330c21d210013959b8502bbffcda07a051b75214f962b51d80270fb0064e341"
+      url "https://github.com/dotenvcloud/cli/releases/download/v1.4.0/dotenv-cli_1.4.0_linux_arm64.tar.gz"
+      sha256 "fcbe121a96ba6d5f81bf20c580d71d70297baa8d13a7668420238e298f227263"
       define_method(:install) do
         bin.install "dotenv"
 
